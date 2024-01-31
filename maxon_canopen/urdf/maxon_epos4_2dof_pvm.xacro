@@ -11,13 +11,13 @@
   </link>
 
   <!-- Joint between Base link and Link1 link -->
-  <joint name="base_link1_joint" type="continuous">
+  <joint name="base_link1_joint" type="revolute">
     <parent link="base_link"/>
     <child link="link1_link"/>
     <origin xyz="0 0 0" rpy="0 0 0"/>
-    <axis xyz="1 0 0"/>
+    <axis xyz="0 1 0"/>
     <dynamics damping="0.7"/>
-    <limit effort="100.0" velocity="1300"/>
+    <limit effort="100.0" velocity="100000" lower="-4265420.0" upper="465420.0"/>
   </joint>
 
   <!-- Link2 Link -->
@@ -25,13 +25,13 @@
   </link>
  
   <!-- Joint between Base link and Link2 link -->
-  <joint name="base_link2_joint" type="continuous">
+  <joint name="base_link2_joint" type="revolute">
     <parent link="base_link"/>
     <child link="link2_link"/>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <axis xyz="1 0 0"/>
     <dynamics damping="0.7"/>
-    <limit effort="100.0" velocity="1300"/>
+    <limit effort="100.0" velocity="200000" lower="-2654208.0" upper="2654208.0"/>
   </joint>
 
   <transmission name="transmission_base_link1">

@@ -1,10 +1,10 @@
 # struct syntax
 nodes:
   node1:
-    id: 1
-    name: base_link1_joint 
+    id: 2
+    name: base_link2_joint 
     eds_pkg: maxon_epos4_ros_canopen # optionals package  name for relative path
-    eds_file: "config/Motor_maxon1.dcf" # path to EDS/DCF file
+    eds_file: "config/motor_90_flat.dcf" # path to EDS/DCF file
     #encoder_resolution: 800
     #vel_to_device: "vel" # rad/s -> mdeg/s
     #vel_from_device: "obj606C" # actual velocity [mdeg/s] -> rad/s
